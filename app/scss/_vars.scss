@@ -1,0 +1,30 @@
+//?---------------------------- VARIABLES ------------------------------------------------>
+
+//? COLORS ---------------------------------------------------------->
+$main-color: #323264;
+$alt-color: #46466E;
+$soft-color: #686887;
+$accent-color: #f0145a;
+$regular-color: #24A3FF;
+$hover-color: #0085FF;
+$active-color: #006ccf;
+$bg-color: #F5F5FA;
+$bg-alt: #EDEDF7;
+$text-color: #B3B3BA;
+$basic-white: #ffffff;
+$separator-color: #E6E6F0;
+$basic-black: #000000;
+$yellow-color: #fed700;
+
+//? GRADIENT -------------------------------------------------------->
+$gradient: linear-gradient(130deg, #323264, #323264 70%, #a54b5f);
+$gradient-soft: linear-gradient(42deg, #323264 15%, #323264 50%, #7a425e 88%);
+$gradient-red: linear-gradient(325deg, #f0145a 5%, #693264 70%);
+$gradient-superSoft: linear-gradient(230deg, #323264 10%, #323264 60%, #643e72 90%);
+$gradient-red-text: linear-gradient(90deg, #f0145a, #ef8080);
+
+//? RADIUS ---------------------------------------------------------->
+$radius-sm: 8px;
+$radius-md: 12px;
+$radius-xl: 24px;
+$radius-rounded: 50%;

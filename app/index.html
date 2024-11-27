@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="you legal solutions provider.">
+	<link rel="shortcut icon" href="images/icons/js-official-svgrepo-com.svg" type="image/x-icon">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.min.css">
+	<title>customPopup</title>
+</head>
+
+<body>
+	<div class="topCall">
+		<img src="./images/icons/calculator-svgrepo-com.svg" alt="calculator Icon">
+	</div>
+
+	<div class="win__overlay" id="wincalc">
+		<div class="win__wrapper">
+
+			<div class="win__top">
+				<h5 class="win__title">Расчет стоимости</h5>
+				<div class="win__close-container">
+					<div class="win__close"></div>
+				</div>
+			</div>
+
+			<form class="win__form" id="orderFormID">
+				<div class="win__item">
+					<p class="win__name">Вид полки:</p>
+					<select class="win__select" name="material" id="type" required>
+						<option value="Металл">Металл</option>
+						<option value="ОСБ">ОСБ</option>
+						<option value="МДФ">МДФ</option>
+						<option value="ДСП">ДСП</option>
+					</select>
+				</div>
+				
+
+				<div class="win__item">
+					<p class="win__name">Размер:</p>
+					<select class="win__select" id="size" name="size" required>
+						<option value="700*300">700*300 мм</option>
+						<option value="900*400">900*400 мм</option>
+						<option value="1150*500">1150*500 мм</option>
+					</select>
+				</div>
+				
+				<div class="win__item">
+					<p class="win__name">Высота стоек:</p>
+					<select class="win__select" id="height" name="height" required>
+						<option value="1500">1500 мм</option>
+						<option value="1800">1800 мм</option>
+						<option value="2000">2000 мм</option>
+						<option value="2200">2200 мм</option>
+						<option value="2500">2500 мм</option>
+						<option value="3000">3000 мм</option>
+					</select>
+				</div>
+
+				<div class="win__item">
+					<p class="win__name">Количество полок:</p>
+					<input class="win__input" type="number" id="shelvesID" name="shelves" required value="4" size="2" min="0" max="10" />
+				</div>
+
+
+				<div class="win__item">
+					<p class="win__name">Полок для шин:</p>
+					<input class="win__input" type="number" id="tiresID" name="tires" value="0" size="2" min="0" max="10" disabled />
+				</div>
+
+
+				<div class="win__item">
+					<label class="win__label" for="edgeID">Угловые усилители:</label>
+					<input type="checkbox" id="edgeID" name="edge" class="win__checkbox" />
+				</div>
+
+				<div class="win__item" name="order" style="display: none;"></div>
+
+				<div class="win__btn-container">
+					<button class="win__btn" type="submit">Рассчитать стоимость</button>
+				</div>
+		</form>
+
+		<div class="win__result">
+			<div class="win__result-container"></div>
+
+			<form id="contactFormID" class="win__result-form">
+				<span class="win__result-span"></span>
+				<h3 class="win__result-title">Контактная информация</h3>
+
+				<div class="win__result-item">
+					<label class="win__result-labels" for="firstNameID">Имя*</label>
+					<input class="win__result-input" type="text" name="name" id="firstNameID" autocomplete="name" placeholder="Введите имя" required>
+				</div>
+
+				
+				<div class="win__result-item">
+					<label class="win__result-labels" for="phoneID">Телефон*</label>
+					<input class="win__result-input" type="tel" name="phone" id="phoneID" autocomplete="phone" placeholder="Введите телефон" required>
+				</div>
+
+					
+				<div class="win__result-item">
+					<label class="win__result-labels" for="emailID">Email*</label>
+					<input class="win__result-input" type="email" name="email" id="emailID" autocomplete="email" placeholder="Введите електронную почту" required>
+				</div>
+
+				<span class="win__result-span"></span>
+
+				<div class="win__result-item-area">
+					<label class="win__result-textAreaLabel" for="commentID">Комментарий к заказу</label>
+					<textarea class="win__result-textArea" name="comment" rows="3" placeholder="Оставьте здесь комментарий..." id="commentID"></textarea>
+				</div>
+				
+				<div class="win__result-btnContainer">
+					<button type="reset" class="win__result-btn">Новый расчет</button>
+					<button type="submit" class="win__result-btn win__result-btn--second">Заказать</button>
+				</div>
+			</form>
+		</div>
+
+		<div class="win__final"></div>
+
+		</div>
+
+	</div>
+
+
+
+
+	<header class="header">
+		<div class="header__container container">
+			<div class="header__logo">
+				<img src="./images/icons/js-official-svgrepo-com.svg" alt="">
+			</div>
+			<p class="header__name">HEADER FOR EXAMPLE</p>
+		</div>
+	</header>
+
+	<main>
+		<div class="custom__container container">
+			<h1 class="custom__title">TITLE & TEXT FOR EXAMPLE</h1>
+			<p class="custom__lorem">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum dolore veritatis
+				quidem, magni odio at ad recusandae accusantium error amet id laudantium expedita, ducimus, officiis modi
+				praesentium sed deserunt beatae nisi iste sit quod repellat. Harum quidem, ex commodi sint consequatur,
+				doloremque distinctio at sit eaque aspernatur est cum totam! Lorem ipsum dolor sit amet consectetur, adipisicing
+				elit. Non aliquid saepe dolor. Magnam culpa hic ratione quia dicta eveniet sed quibusdam autem ad inventore cum
+				sint debitis ex nesciunt, sapiente consequatur aut repellat possimus iusto quisquam, voluptate est. Quam commodi
+				voluptates deserunt ut fugit sit asperiores, aliquam, magnam nulla non veritatis ea quibusdam praesentium
+				expedita! Veniam quibusdam neque deleniti adipisci reprehenderit dicta voluptatibus eum quaerat laborum quo
+				consequatur necessitatibus eveniet fugit architecto porro praesentium inventore, fugiat explicabo voluptatum
+				voluptas ut et vitae quia. Odit voluptatibus, similique amet eius cupiditate, aliquam tempora nam accusamus
+				exercitationem consequuntur quo ipsum, corrupti quos magnam asperiores beatae natus ipsam illum ad harum ut!
+				que maiores cupiditate non nam magni temporibus
+				voluptas sit omnis ex autem ea facere incidunt. Dolor nulla praesentium omnis alias id pariatur distinctio sit
+				tempora quae dignissimos! Cupiditate soluta consectetur impedit obcaecati aperiam odit repudiandae aliquid
+				voluptatibus dicta, necessitatibus nobis alias tenetur fuga, sequi natus pariatur qui quasi fugiat beatae.
+				Pariatur veniam saepe nisi! Sint placeat veritatis ullam quaerat molestias accusantium maxime hic quam laborum.
+				Maxime repellat pariatur sit exercitationem, ab, quas est magni quo iusto nemo alias provident non a perferendis
+				accusamus quod tempore enim, eius odio quis adipisci excepturi! Excepturi officiis assumenda dolorem unde iure
+				magni incidunt voluptas excepturi explicabo? Molestias consequuntur repellat ab eius ullam perspiciatis hic
+				tempore.
+			</p>
+		</div>
+	</main>
+
+	<footer class="footer">
+		<div class="footer__container container">
+			<p class="footer__name">FOOTER FOR EXAMPLE</p>
+		</div>
+	</footer>
+
+	<script src="js/main.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,13 @@
+.footer {
+  background: $alt-color;
+
+  &__container {
+    padding: 20px 30px;
+  }
+
+  &__name {
+    text-align: center;
+    font-size: 18px;
+    color: $basic-white;
+  }
+}
